@@ -28,7 +28,7 @@ export const theme = createTheme({
       },
     },
     Body: {
-      styles: (theme) => ({
+      styles: (theme: { colorScheme: string; colors: { ghost: any[]; halloween: any[]; }; }) => ({
         root: {
           backgroundColor: theme.colorScheme === 'dark'
             ? theme.colors.ghost[9]
