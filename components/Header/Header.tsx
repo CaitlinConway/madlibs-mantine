@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 import { Container, Group, Title, Box, Text } from '@mantine/core';
 import { useRouter } from 'next/navigation';
@@ -13,7 +15,7 @@ export function Header() {
     return (
         <Box bg="orange.9" py="md" mb="xl">
             <Container>
-                <Group justify="space-between" align="center">
+                <Group justify="center" align="center">
                     <Group onClick={handleBackToStories} style={{ cursor: 'pointer' }}>
                         <IconPumpkinScary size={32} color="black" />
                         <Title order={2} c="black">Alma's Spooky Mad Libs</Title>

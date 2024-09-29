@@ -1,0 +1,7 @@
+body {
+    background-color: var(--mantine-color-halloween-1);
+  }
+  
+  [data-mantine-color-scheme="dark"] body {
+    background-color: var(--mantine-color-ghost-9);
+  }

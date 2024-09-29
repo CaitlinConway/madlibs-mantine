@@ -27,10 +27,19 @@ export const theme = createTheme({
         color: 'halloween',
       },
     },
+    Body: {
+      styles: (theme) => ({
+        root: {
+          backgroundColor: theme.colorScheme === 'dark'
+            ? theme.colors.ghost[9]
+            : theme.colors.halloween[1],
+        },
+      }),
+    },
   },
   other: {
     backgroundColor: {
-      light: '#FFF5E6',
+      light: 'var(--mantine-color-halloween-1)',
       dark: '#263238',
     },
     textColor: {

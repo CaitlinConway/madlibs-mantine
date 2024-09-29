@@ -1,3 +1,4 @@
+import { Header } from '@/components/Header/Header';
 import { ColorSchemeToggle } from '../components/ColorSchemeToggle/ColorSchemeToggle';
 import { Welcome } from '../components/Welcome/Welcome';
 import { TableScrollArea } from '@/components/TableScrollArea/TableScrollArea';
@@ -6,7 +7,7 @@ import { Box, Flex } from '@mantine/core';
 export default function HomePage() {
   return (
     <Flex direction="column" style={{ height: '100vh' }}>
-      <Welcome />
+      <Header />
       <Box style={{ flex: 1, overflow: 'hidden' }}>
         <TableScrollArea />
       </Box>

@@ -95,12 +95,12 @@ export const stories = [{
 {
     title: 'Alma’s Adventure',
     author: 'Lauren Bauer',
-    content: `Once upon a time, Alma decided to go on an adventure. With her trusty backpack filled with [noun] and her favorite [adjective] [noun], she set off into the [place]. Alma knew her parents, Ethan and Carmel, would be proud of her bravery. As she journeyed, she encountered a [adjective] [animal] that needed help. Alma quickly used her [verb] skills to assist it. After the adventure, they discovered a hidden [noun] filled with [plural noun]! Excited to share her story, Alma raced home to tell Ethan and Carmel all about her thrilling day. Together, they celebrated her courage with a big [food] feast!`
+    content: 'Once upon a time, Alma decided to go on an adventure. With her trusty backpack filled with [noun] and her favorite [adjective] [noun], she set off into the [place]. Alma knew her parents, Ethan and Carmel, would be proud of her bravery. As she journeyed, she encountered a [adjective] [animal] that needed help. Alma quickly used her [verb] skills to assist it. After the adventure, they discovered a hidden [noun] filled with [plural noun]! Excited to share her story, Alma raced home to tell Ethan and Carmel all about her thrilling day. Together, they celebrated her courage with a big [food] feast!'
 },
 {
     title: 'Oops Alma Did It Again',
     author: 'Lauren Bauer',
-    content: `One sunny day, Alma decided to hang out with her friend, Britney Spears. They planned to go to the [place] to have some fun. Alma packed her favorite [noun] and a [adjective] [noun] for their adventure. When they arrived, they accidentally stumbled into a [adjective] [event]! Britney suggested they [verb] their way through it. Alma couldn't believe her eyes when they saw a [adjective] [animal] dancing on stage. Suddenly, they found themselves caught up in a [noun]-making contest! With a [verb] and a little [adjective] teamwork, they created the most outrageous [noun] ever. Everyone laughed, and they even won a [prize]! At the end of the day, Alma and Britney couldn’t stop giggling about their wild escapades and promised to plan another hang soon.`
+    content: 'One sunny day, Alma decided to hang out with her friend, Britney Spears. They planned to go to the [place] to have some fun. Alma packed her favorite [noun] and a [adjective] [noun] for their adventure. When they arrived, they accidentally stumbled into a [adjective] [event]! Britney suggested they [verb] their way through it. Alma couldn\'t believe her eyes when they saw a [adjective] [animal] dancing on stage. Suddenly, they found themselves caught up in a [noun]-making contest! With a [verb] and a little [adjective] teamwork, they created the most outrageous [noun] ever. Everyone laughed, and they even won a [prize]! At the end of the day, Alma and Britney couldn’t stop giggling about their wild escapades and promised to plan another hang soon.'
 }
 
 
