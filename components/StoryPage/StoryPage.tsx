@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { useParams, useRouter } from 'next/navigation';
-import { Container, Title } from '@mantine/core';
+import { Container, Title, Button } from '@mantine/core';
 import { StoryForm } from '../StoryForm/StoryForm';
 import { stories } from '../../test-utils/constants';
 
@@ -15,8 +15,11 @@ export function StoryPage() {
 
     const handleStoryComplete = (storyId: number, modifiedContent: string, title: string) => {
         console.log(`Story ${storyId} completed with modified content:`, modifiedContent);
-        // Navigate to the StoryDetails page with the modified content
         router.push(`/story/${encodeURIComponent(title)}/details?content=${encodeURIComponent(modifiedContent)}`);
+    };
+
+    const handleBackToStories = () => {
+        router.push('/');
     };
 
     if (!story) {
@@ -25,6 +28,7 @@ export function StoryPage() {
 
     return (
         <Container>
+            <Button onClick={handleBackToStories} mb="md">Back to Stories</Button>
             <StoryForm story={story} onSubmit={handleStoryComplete} />
         </Container>
     );
