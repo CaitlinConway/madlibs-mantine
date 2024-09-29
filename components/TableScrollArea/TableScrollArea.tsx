@@ -2,7 +2,7 @@
 
 import cx from 'clsx';
 import { useState } from 'react';
-import { Table, ScrollArea } from '@mantine/core';
+import { Table, ScrollArea, Box } from '@mantine/core';
 import classes from './TableScrollArea.module.css';
 import { stories } from '@/test-utils/constants';
 import { useRouter } from 'next/navigation';
@@ -22,7 +22,7 @@ export function TableScrollArea() {
     };
 
     const rows = data.map((row) => (
-        <Table.Tr key={row.title}>
+        <Table.Tr key={row.title} className={classes.tableRow}>
             <Table.Td>
                 <a
                     href="#"
@@ -30,7 +30,7 @@ export function TableScrollArea() {
                         e.preventDefault();
                         handleTitleClick(row);
                     }}
-                    style={{ cursor: 'pointer', textDecoration: 'underline' }}
+                    className={classes.storyLink}
                 >
                     {row.title}
                 </a>
@@ -44,16 +44,18 @@ export function TableScrollArea() {
     }
 
     return (
-        <ScrollArea h={300} miw={200} onScrollPositionChange={({ y }) => setScrolled(y !== 0)}>
-            <Table miw={700} horizontalSpacing="xl" striped highlightOnHover>
-                <Table.Thead className={cx(classes.header, { [classes.scrolled]: scrolled })}>
-                    <Table.Tr>
-                        <Table.Th>Title</Table.Th>
-                        <Table.Th>Author</Table.Th>
-                    </Table.Tr>
-                </Table.Thead>
-                <Table.Tbody>{rows}</Table.Tbody>
-            </Table>
-        </ScrollArea>
+        <Box className={classes.tableWrapper}>
+            <ScrollArea className={classes.scrollArea} onScrollPositionChange={({ y }) => setScrolled(y !== 0)}>
+                <Table className={classes.table}>
+                    <Table.Thead className={cx(classes.header, { [classes.scrolled]: scrolled })}>
+                        <Table.Tr>
+                            <Table.Th>Spooky Title</Table.Th>
+                            <Table.Th>Ghostly Author</Table.Th>
+                        </Table.Tr>
+                    </Table.Thead>
+                    <Table.Tbody>{rows}</Table.Tbody>
+                </Table>
+            </ScrollArea>
+        </Box>
     );
 }
