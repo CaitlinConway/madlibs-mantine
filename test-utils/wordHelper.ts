@@ -9,9 +9,9 @@ export function replaceBracketedWords(paragraph: string, replacements: string[])
     const result = paragraph.replace(bracketedWordPattern, (fullMatch, word) => {
         if (index < replacements.length) {
             // If the replacement is the same as the original bracketed word, keep the brackets
-            if (replacements[index] === `[${word}]`) {
-                return fullMatch;
-            }
+            // if (replacements[index] === `[${word}]`) {
+            //     return fullMatch;
+            // }
             // Otherwise, use the replacement word without brackets
             return replacements[index++];
         } else {
