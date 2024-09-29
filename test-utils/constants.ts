@@ -92,4 +92,16 @@ export const stories = [{
     author: 'Caitlin Conway',
     content: 'It was a dark and stormy Halloween night in Milwaukee. The streets were filled with [adjective] ghouls and [adjective] ghosts. In the distance, I heard the unmistakable sound of [object], reminiscent of the epic chase scene from Terminator 2. I turned to see [famous character] riding a [adjective] [animal], wearing a cowboy hat. Just then, [famous character] burst out of the shadows, holding a bag of [food item]. "You won\'t believe it!" they exclaimed. "There\'s a haunted [place] where a [adjective] baby named Alma is trapped, and only a potluck can save her!" Determined to help, we gathered our friends and their dogs, Oliver and Boomer, for a Halloween potluck. Everyone brought [food item], and we set up for a night of [adjective] bar trivia featuring questions about everything from Who Framed Roger Rabbit to Bee Movie. As we prepared, we couldn\'t forget to celebrate 420 with a few [adjective] snacks while blasting Pitbull\'s greatest hits! Finally, we headed to the haunted [place], where we faced off against spooky cowboys who challenged us to a trivia duel. Armed with our knowledge and a basket of [food item], we were ready to save Alma and make this Halloween the [adjective] adventure of a lifetime!'
 },
+{
+    title: 'Alma’s Adventure',
+    author: 'Lauren Bauer',
+    content: `Once upon a time, Alma decided to go on an adventure. With her trusty backpack filled with [noun] and her favorite [adjective] [noun], she set off into the [place]. Alma knew her parents, Ethan and Carmel, would be proud of her bravery. As she journeyed, she encountered a [adjective] [animal] that needed help. Alma quickly used her [verb] skills to assist it. After the adventure, they discovered a hidden [noun] filled with [plural noun]! Excited to share her story, Alma raced home to tell Ethan and Carmel all about her thrilling day. Together, they celebrated her courage with a big [food] feast!`
+},
+{
+    title: 'Oops Alma Did It Again',
+    author: 'Lauren Bauer',
+    content: `One sunny day, Alma decided to hang out with her friend, Britney Spears. They planned to go to the [place] to have some fun. Alma packed her favorite [noun] and a [adjective] [noun] for their adventure. When they arrived, they accidentally stumbled into a [adjective] [event]! Britney suggested they [verb] their way through it. Alma couldn't believe her eyes when they saw a [adjective] [animal] dancing on stage. Suddenly, they found themselves caught up in a [noun]-making contest! With a [verb] and a little [adjective] teamwork, they created the most outrageous [noun] ever. Everyone laughed, and they even won a [prize]! At the end of the day, Alma and Britney couldn’t stop giggling about their wild escapades and promised to plan another hang soon.`
+}
+
+
 ];
