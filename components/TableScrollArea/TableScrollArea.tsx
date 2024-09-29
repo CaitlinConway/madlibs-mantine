@@ -49,7 +49,7 @@ export function TableScrollArea() {
     }
 
     return (
-        <Box className={classes.tableWrapper} px="md">
+        <Box className={classes.tableWrapper} style={{ height: '100%' }}>
             <ScrollArea className={classes.scrollArea} onScrollPositionChange={({ y }) => setScrolled(y !== 0)}>
                 <Table className={classes.table}>
                     <Table.Thead className={cx(classes.header, { [classes.scrolled]: scrolled })}>

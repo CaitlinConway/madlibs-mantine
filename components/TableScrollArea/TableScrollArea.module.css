@@ -1,9 +1,8 @@
 .tableWrapper {
   padding: 0 20px;
-  height: calc(100vh - 200px);
+  height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   background-color: light-dark(var(--mantine-color-halloween-1), var(--mantine-color-ghost-9));
   border-radius: 10px;
   box-shadow: 0 0 20px light-dark(rgba(239, 108, 0, 0.1), rgba(255, 165, 0, 0.3));

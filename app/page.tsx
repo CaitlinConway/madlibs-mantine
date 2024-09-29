@@ -1,16 +1,18 @@
 import { ColorSchemeToggle } from '../components/ColorSchemeToggle/ColorSchemeToggle';
 import { Welcome } from '../components/Welcome/Welcome';
 import { TableScrollArea } from '@/components/TableScrollArea/TableScrollArea';
-import { Box } from '@mantine/core';
+import { Box, Flex } from '@mantine/core';
 
 export default function HomePage() {
   return (
-    <Box style={{ height: '100vh', display: 'flex', flexDirection: 'column' }}>
+    <Flex direction="column" style={{ height: '100vh' }}>
       <Welcome />
-      <TableScrollArea />
-      <Box style={{ marginTop: 'auto', padding: '20px' }}>
+      <Box style={{ flex: 1, overflow: 'hidden' }}>
+        <TableScrollArea />
+      </Box>
+      <Box mb="md">
         <ColorSchemeToggle />
       </Box>
-    </Box>
+    </Flex>
   );
 }
