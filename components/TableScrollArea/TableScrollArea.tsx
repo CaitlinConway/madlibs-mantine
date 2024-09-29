@@ -36,7 +36,6 @@ export function TableScrollArea() {
                 </a>
             </Table.Td>
             <Table.Td>{row.author}</Table.Td>
-            <Table.Td>{row.year}</Table.Td>
         </Table.Tr>
     ));
 
@@ -51,7 +50,6 @@ export function TableScrollArea() {
                     <Table.Tr>
                         <Table.Th>Title</Table.Th>
                         <Table.Th>Author</Table.Th>
-                        <Table.Th>Year</Table.Th>
                     </Table.Tr>
                 </Table.Thead>
                 <Table.Tbody>{rows}</Table.Tbody>

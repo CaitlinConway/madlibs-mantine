@@ -2,9 +2,10 @@
 
 import React from 'react';
 import { useParams, useRouter } from 'next/navigation';
-import { Container, Title, Button } from '@mantine/core';
+import { Container, Title } from '@mantine/core';
 import { StoryForm } from '../StoryForm/StoryForm';
 import { stories } from '../../test-utils/constants';
+import { Header } from '../Header/Header';
 
 export function StoryPage() {
     const params = useParams();
@@ -18,18 +19,16 @@ export function StoryPage() {
         router.push(`/story/${encodeURIComponent(title)}/details?content=${encodeURIComponent(modifiedContent)}`);
     };
 
-    const handleBackToStories = () => {
-        router.push('/');
-    };
-
     if (!story) {
         return <Container><Title>Story not found</Title></Container>;
     }
 
     return (
-        <Container>
-            <Button onClick={handleBackToStories} mb="md">Back to Stories</Button>
-            <StoryForm story={story} onSubmit={handleStoryComplete} />
-        </Container>
+        <>
+            <Header />
+            <Container>
+                <StoryForm story={story} onSubmit={handleStoryComplete} />
+            </Container>
+        </>
     );
 }
