@@ -1,4 +1,4 @@
-#Alma's Spooky Mad Libs
+# Alma's Spooky Mad Libs
 
 ## Tech Stack
 A quick Next.js application leveraging React, Typescript, and components from Mantine UI library. Built in under 2 hours and currently hosted on Heroku at [almas-madlibs.net](http://www.almas-madlibs.net/)
