@@ -6,7 +6,7 @@ export function Welcome() {
     <Box py="xs">
       <Title className={classes.title} ta="center">
         <Text inherit variant="gradient" component="span" gradient={{ from: 'red', to: 'orange' }}>
-          Alma's Mad Libs
+          Alma's Spooky Mad Libs
         </Text>
       </Title>
     </Box>

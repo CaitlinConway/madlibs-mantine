@@ -54,7 +54,7 @@ export function TableScrollArea() {
                 <Table className={classes.table}>
                     <Table.Thead className={cx(classes.header, { [classes.scrolled]: scrolled })}>
                         <Table.Tr>
-                            <Table.Th>Spooky Title</Table.Th>
+                            <Table.Th>Sinister Tale</Table.Th>
                             <Table.Th>Ghostly Author</Table.Th>
                         </Table.Tr>
                     </Table.Thead>
