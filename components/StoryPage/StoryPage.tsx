@@ -7,15 +7,21 @@ import { StoryForm } from '../StoryForm/StoryForm';
 import { stories } from '../../test-utils/constants';
 import { Header } from '../Header/Header';
 
+interface Story {
+    title: string;
+    content: string;
+    author: string;
+}
+
 export function StoryPage() {
     const params = useParams();
     const router = useRouter();
     const title = params.title as string;
 
-    const story = stories.find(s => s.title === decodeURIComponent(title));
+    const story = stories.find(s => s.title === decodeURIComponent(title)) as Story | undefined;
 
-    const handleStoryComplete = (storyId: number, modifiedContent: string, title: string) => {
-        console.log(`Story ${storyId} completed with modified content:`, modifiedContent);
+    const handleStoryComplete = (modifiedContent: string, title: string) => {
+        console.log(`Story completed with modified content:`, modifiedContent);
         router.push(`/story/${encodeURIComponent(title)}/details?content=${encodeURIComponent(modifiedContent)}`);
     };
 

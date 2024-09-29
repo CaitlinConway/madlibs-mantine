@@ -21,6 +21,11 @@ export function TableScrollArea() {
         router.push(`/story/${encodeURIComponent(story.title)}`);
     };
 
+    const handleStoryComplete = (modifiedContent: string, title: string) => {
+        console.log(`Story completed with modified content:`, modifiedContent);
+        router.push(`/story/${encodeURIComponent(title)}/details?content=${encodeURIComponent(modifiedContent)}`);
+    };
+
     const rows = data.map((row) => (
         <Table.Tr key={row.title} className={classes.tableRow}>
             <Table.Td>
@@ -40,7 +45,7 @@ export function TableScrollArea() {
     ));
 
     if (selectedStory) {
-        return <StoryForm story={selectedStory} />;
+        return <StoryForm story={selectedStory} onSubmit={handleStoryComplete} />;
     }
 
     return (

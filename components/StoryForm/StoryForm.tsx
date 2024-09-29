@@ -3,14 +3,14 @@ import { TextInput, Button, Title, Box, Stack } from '@mantine/core';
 import { extractBracketedWords, replaceBracketedWords } from '../../test-utils/wordHelper';
 
 interface Story {
-    id: number;
     title: string;
     content: string;
+    author: string;
 }
 
 interface StoryFormProps {
     story: Story;
-    onSubmit: (storyId: number, modifiedContent: string, title: string) => void;
+    onSubmit: (modifiedContent: string, title: string) => void;
 }
 
 export function StoryForm({ story, onSubmit }: StoryFormProps) {
@@ -38,7 +38,7 @@ export function StoryForm({ story, onSubmit }: StoryFormProps) {
             return replacement || `[${word}]`; // Use original word if no replacement
         });
         const modifiedContent = replaceBracketedWords(story.content, replacementArray);
-        onSubmit(story.id, modifiedContent, story.title);
+        onSubmit(modifiedContent, story.title);
     };
 
     return (
