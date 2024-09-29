@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { TextInput, Button, Title, Box, Stack } from '@mantine/core';
 import { extractBracketedWords, replaceBracketedWords } from '../../test-utils/wordHelper';
+import classes from './StoryForm.module.css';
 
 interface Story {
     title: string;
@@ -42,7 +43,7 @@ export function StoryForm({ story, onSubmit }: StoryFormProps) {
     };
 
     return (
-        <Box>
+        <Box className={classes.formContainer}>
             <Title order={2} mb="md">{story.title}</Title>
             <form onSubmit={handleSubmit}>
                 <Stack>
@@ -58,7 +59,7 @@ export function StoryForm({ story, onSubmit }: StoryFormProps) {
                             />
                         );
                     })}
-                    <Button type="submit">Submit</Button>
+                    <Button type="submit" className={classes.submitButton}>Submit</Button>
                 </Stack>
             </form>
         </Box>
