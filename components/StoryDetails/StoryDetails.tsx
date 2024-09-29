@@ -9,8 +9,8 @@ interface StoryDetailsProps {
 export function StoryDetails({ title, author, content }: StoryDetailsProps) {
     return (
         <div>
-            <Title order={1}>{title}</Title>
-            <Text size="lg" mb="md">By {author}</Text>
+            <Title order={1} mb="md">{title}</Title>
+            <Text size="lg" mb="xl">By {author}</Text>
             <Text>{content}</Text>
         </div>
     );
