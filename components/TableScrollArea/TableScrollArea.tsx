@@ -2,7 +2,7 @@
 
 import cx from 'clsx';
 import { useState } from 'react';
-import { Table, ScrollArea, Box, UnstyledButton, Group, Text } from '@mantine/core';
+import { Table, ScrollArea, Box, UnstyledButton, Group, Text, Center } from '@mantine/core';
 import { IconChevronUp, IconChevronDown, IconSelector } from '@tabler/icons-react';
 import classes from './TableScrollArea.module.css';
 import { stories } from '@/test-utils/constants';
@@ -62,11 +62,13 @@ export function TableScrollArea() {
         return (
             <Table.Th className={classes.th}>
                 <UnstyledButton onClick={() => handleSort(field)} className={classes.control}>
-                    <Group justify="space-between">
-                        <Text fw={500} size="sm">
+                    <Group justify="space-between" wrap="nowrap">
+                        <Text fw={500} size="sm" className={classes.thText}>
                             {children}
                         </Text>
-                        <Icon size="0.9rem" stroke={1.5} />
+                        <Center className={classes.icon}>
+                            <Icon size="0.9rem" stroke={1.5} />
+                        </Center>
                     </Group>
                 </UnstyledButton>
             </Table.Th>

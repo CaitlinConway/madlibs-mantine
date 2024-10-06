@@ -60,3 +60,35 @@
     text-decoration: underline;
   }
 }
+
+.th {
+  padding: 0;
+}
+
+.control {
+  width: 100%;
+  padding: var(--mantine-spacing-xs) var(--mantine-spacing-md);
+}
+
+.thText {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.icon {
+  transition: transform 0.3s ease;
+  width: rem(21px);
+  height: rem(21px);
+}
+
+@media (max-width: $mantine-breakpoint-sm) {
+  .control {
+    padding-left: var(--mantine-spacing-xs);
+    padding-right: var(--mantine-spacing-xs);
+  }
+  
+  .thText {
+    font-size: var(--mantine-font-size-sm);
+  }
+}
