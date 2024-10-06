@@ -2,7 +2,8 @@
 
 import cx from 'clsx';
 import { useState } from 'react';
-import { Table, ScrollArea, Box } from '@mantine/core';
+import { Table, ScrollArea, Box, UnstyledButton, Group, Text } from '@mantine/core';
+import { IconChevronUp, IconChevronDown, IconSelector } from '@tabler/icons-react';
 import classes from './TableScrollArea.module.css';
 import { stories } from '@/test-utils/constants';
 import { useRouter } from 'next/navigation';
@@ -11,9 +12,16 @@ import { StoryForm } from '@/components/StoryForm/StoryForm';
 const data = stories;
 type Story = typeof stories[0];
 
+// New type for sort state
+type SortState = {
+    field: keyof Story;
+    direction: 'asc' | 'desc';
+} | null;
+
 export function TableScrollArea() {
     const [scrolled, setScrolled] = useState(false);
     const [selectedStory, setSelectedStory] = useState<Story | null>(null);
+    const [sortState, setSortState] = useState<SortState>(null);
     const router = useRouter();
 
     const handleTitleClick = (story: Story) => {
@@ -26,7 +34,46 @@ export function TableScrollArea() {
         router.push(`/story/${encodeURIComponent(title)}/details?content=${encodeURIComponent(modifiedContent)}`);
     };
 
-    const rows = data.map((row) => (
+    // New sorting function
+    const sortedData = [...data].sort((a, b) => {
+        if (!sortState) return 0;
+        const { field, direction } = sortState;
+        const modifier = direction === 'asc' ? 1 : -1;
+        return a[field].localeCompare(b[field]) * modifier;
+    });
+
+    // New function to handle sorting
+    const handleSort = (field: keyof Story) => {
+        setSortState((current) => {
+            if (current?.field === field) {
+                return { field, direction: current.direction === 'asc' ? 'desc' : 'asc' };
+            }
+            return { field, direction: 'asc' };
+        });
+    };
+
+    // New component for sortable header
+    function Th({ children, field }: { children: React.ReactNode; field: keyof Story }) {
+        const Icon = sortState?.field === field
+            ? sortState.direction === 'asc'
+                ? IconChevronUp
+                : IconChevronDown
+            : IconSelector;
+        return (
+            <Table.Th className={classes.th}>
+                <UnstyledButton onClick={() => handleSort(field)} className={classes.control}>
+                    <Group justify="space-between">
+                        <Text fw={500} size="sm">
+                            {children}
+                        </Text>
+                        <Icon size="0.9rem" stroke={1.5} />
+                    </Group>
+                </UnstyledButton>
+            </Table.Th>
+        );
+    }
+
+    const rows = sortedData.map((row) => (
         <Table.Tr key={row.title} className={classes.tableRow}>
             <Table.Td>
                 <a
@@ -54,8 +101,8 @@ export function TableScrollArea() {
                 <Table className={classes.table}>
                     <Table.Thead className={cx(classes.header, { [classes.scrolled]: scrolled })}>
                         <Table.Tr>
-                            <Table.Th>Sinister Tale</Table.Th>
-                            <Table.Th>Ghostly Author</Table.Th>
+                            <Th field="title">Sinister Tale</Th>
+                            <Th field="author">Ghostly Author</Th>
                         </Table.Tr>
                     </Table.Thead>
                     <Table.Tbody>{rows}</Table.Tbody>
