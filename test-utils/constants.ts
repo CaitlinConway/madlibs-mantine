@@ -101,7 +101,15 @@ export const stories = [{
     title: 'Oops Alma Did It Again',
     author: 'Lauren Bauer',
     content: 'One sunny day, Alma decided to hang out with her friend, Britney Spears. They planned to go to the [place] to have some fun. Alma packed her favorite [noun] and a [adjective] [noun] for their adventure. When they arrived, they accidentally stumbled into a [adjective] [event]! Britney suggested they [verb] their way through it. Alma couldn\'t believe her eyes when they saw a [adjective] [animal] dancing on stage. Suddenly, they found themselves caught up in a [noun]-making contest! With a [verb] and a little [adjective] teamwork, they created the most outrageous [noun] ever. Everyone laughed, and they even won a [prize]! At the end of the day, Alma and Britney couldn’t stop giggling about their wild escapades and promised to plan another hang soon.'
+},
+{
+    title: 'Born Spooky: Alma’s Secret',
+    author: 'Brooke Barnhart',
+    content: 'On [historic date], spooky Alma was born in [city, state]. She was [adjective] and [adjective], and her parents loved her so much. But little did they know, Alma was harboring a [adjective] secret. Her parents started to question when she developed a taste for [body part] and [liquid]. When she would cry, funny things would happen. [Noun] would shake and [noun] would shatter. Eventually, Alma’s parents called [proper name], a Tony Shalhoub-type investigator. He took one look at Alma and knew she was special—it was basically a scene out of [scary movie title]. She was a [adjective] witchy baby. Her parents felt relief. They love witches! Now, every night she takes her dogs, Oliver and Boomer, out for a ride, flying on the family [noun].'
+},
+{
+    title: 'Waluigi’s Insurance Adventure',
+    author: 'Sam Stigler',
+    content: 'One sunny day in the Mushroom Kingdom, [adjective] Waluigi decided it was time to sell door-to-door insurance. With his [noun] in hand and a [adjective] smile on his face, he strolled through the neighborhood, hoping to make some [amount of money]. As he knocked on the first door, he accidentally stumbled into a [adjective] tennis match where Birdo was practicing her serves. "Oops! Sorry about that!" Waluigi exclaimed, trying to regain his balance. Birdo, not one to back down from a challenge, said, "If you think you\'re so great, why don\'t you play me in a match?" Waluigi, always up for a challenge, agreed. "But if I win, you have to buy insurance from me!" he declared confidently, adjusting his [clothing item]. The match began, and Waluigi quickly realized he was out of his element. With every [noun] Birdo hit, he felt the pressure mounting. The crowd of [plural noun] cheered as she served with [adverb] precision. Waluigi tried his best, but he kept [verb ending in -ing] instead of hitting the ball. Just when he thought all hope was lost, Waluigi found his rhythm. He made a [adjective] comeback with a surprising [noun] that left Birdo stunned! The crowd erupted in cheers, and Waluigi thought, "Maybe I can sell insurance AND win at tennis!" In a nail-biting finish, Waluigi managed to secure the victory! Out of breath but triumphant, he turned to Birdo and said, "See? Now you have to buy my policy!" Birdo laughed and replied, "Fine, but only if it covers [silly item]!" Waluigi walked away that day not only with a new customer but also with a story to tell. From then on, he was known as the [nickname], the insurance-selling tennis champion of the Mushroom Kingdom!'
 }
-
-
 ];
