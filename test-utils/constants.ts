@@ -111,5 +111,38 @@ export const stories = [{
     title: 'Waluigi’s Insurance Adventure',
     author: 'Sam Stigler',
     content: 'One sunny day in the Mushroom Kingdom, [adjective] Waluigi decided it was time to sell door-to-door insurance. With his [noun] in hand and a [adjective] smile on his face, he strolled through the neighborhood, hoping to make some [amount of money]. As he knocked on the first door, he accidentally stumbled into a [adjective] tennis match where Birdo was practicing her serves. "Oops! Sorry about that!" Waluigi exclaimed, trying to regain his balance. Birdo, not one to back down from a challenge, said, "If you think you\'re so great, why don\'t you play me in a match?" Waluigi, always up for a challenge, agreed. "But if I win, you have to buy insurance from me!" he declared confidently, adjusting his [clothing item]. The match began, and Waluigi quickly realized he was out of his element. With every [noun] Birdo hit, he felt the pressure mounting. The crowd of [plural noun] cheered as she served with [adverb] precision. Waluigi tried his best, but he kept [verb ending in -ing] instead of hitting the ball. Just when he thought all hope was lost, Waluigi found his rhythm. He made a [adjective] comeback with a surprising [noun] that left Birdo stunned! The crowd erupted in cheers, and Waluigi thought, "Maybe I can sell insurance AND win at tennis!" In a nail-biting finish, Waluigi managed to secure the victory! Out of breath but triumphant, he turned to Birdo and said, "See? Now you have to buy my policy!" Birdo laughed and replied, "Fine, but only if it covers [silly item]!" Waluigi walked away that day not only with a new customer but also with a story to tell. From then on, he was known as the [nickname], the insurance-selling tennis champion of the Mushroom Kingdom!'
+}, {
+    title: 'The Case of The Haunted Bread',
+    author: 'Cole Mariottini',
+    content: `On [HOLIDAY] night, Alma decided to [VERB] some delicious [TYPE OF BREAD] bread. She was really [ADJECTIVE] for a [FOOD] sandwich, and fresh baked bread made the best sandwiches.
+
+She knew she needed [NUMBER] grams of flour, [NUMBER] grams of [LIQUID], a [MEASUREMENT] of yeast, and a pinch of salt. Alma [PAST TENSE VERB] all the ingredients in a big [VESSEL].
+
+As Alma [PAST TENSE VERB] the dough, it began to look like a [BODY PART]! The dough began to speak, and it said:
+
+“I am the ghost of [NOUN], and I am here to haunt you for not doing your [NOUN].”
+
+Alma [VERB FOR SPEAKING] to the ghost, “No thanks, I’m [ADJECTIVE]!” And baked the bread ghost in the [NOUN].
+
+Alma made the most [ADJECTIVE] bread she ever made with the haunted bread, and she never heard from the bread ghost again!
+
+Happy haunting!!`,
+},
+{
+    title: 'If You Like [plural noun A] / [verb A]',
+    author: 'Travis Worth',
+    content: `I was tired of my lady. We'd been together too long, like a worn-out recording of [song]. So while she lay there [gerund A], I read the paper in bed. And in the personal columns, there was this letter I read:
+
+    If you like [plural noun A] and gettin' caught in the [meteorologic event], if you're not into [exercise], if you have half a [noun A], if you like [gerund B] at midnight in the [geological formation A] on the [geo formation B], then I'm the love that you've looked for. Write to me and [verb A].
+
+    I didn't think about my lady. I know that sounds kinda mean, but me and my old lady had fallen into the same old dull routine. So I wrote to the paper, took out a personal ad, and though I'm nobody's poet, I thought it wasn't half bad.
+
+    Yes, I like [plural noun A] and gettin' caught in the [meteorologic event]. I'm not much into [plural noun B], but I am into [plural noun C]. I've got to meet you by [day of the year] and [verb B] through all this red tape at a bar called [name]'s, where we'll plan our [verb A].
+
+    So I waited with high hopes, and she walked in the place. I knew her [body part A] in an instant, I knew the curve of her [body part B]. It was my own [adjective A] lady, and she said, “[catch phrase A].” Then we [verb -ed A] for a moment, and I said, “[catch phrase B]."
+
+    If you like [plural noun A] and gettin' caught in the [noun B] and the feel of the [noun C] and the taste of [plural noun C], if you like [gerund B] at midnight in the [geological formation A] on the [geo formation B], you're the lady I've looked for. Come with me and [verb A].`
 }
+
+
 ];
